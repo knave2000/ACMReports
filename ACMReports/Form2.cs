@@ -52,10 +52,10 @@ namespace ACMReports
                 conn.Close();
                 MessageBox.Show("Connection to ACM successfully installed.");
             }
-            catch (Exception msg)
+            catch
             {
                 // if something went wrong, and you want to know why
-                MessageBox.Show("Connection to ACM failed. " + msg.ToString());
+                MessageBox.Show("Connection to ACM failed.");
             }
         }
 
