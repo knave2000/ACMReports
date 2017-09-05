@@ -33,10 +33,31 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="MigraDoc.DocumentObjectModel-wpf, Version=1.50.4619.0, Culture=neutral, PublicKeyToken=f94615aa0424f9eb, processorArchitecture=MSIL">
+      <HintPath>..\packages\PDFsharp-MigraDoc-wpf.1.50.4619-beta4c\lib\net30\MigraDoc.DocumentObjectModel-wpf.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MigraDoc.Rendering-wpf, Version=1.50.4619.0, Culture=neutral, PublicKeyToken=f94615aa0424f9eb, processorArchitecture=MSIL">
+      <HintPath>..\packages\PDFsharp-MigraDoc-wpf.1.50.4619-beta4c\lib\net30\MigraDoc.Rendering-wpf.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MigraDoc.RtfRendering-wpf, Version=1.50.4619.0, Culture=neutral, PublicKeyToken=f94615aa0424f9eb, processorArchitecture=MSIL">
+      <HintPath>..\packages\PDFsharp-MigraDoc-wpf.1.50.4619-beta4c\lib\net30\MigraDoc.RtfRendering-wpf.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Npgsql, Version=3.2.5.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7, processorArchitecture=MSIL">
       <HintPath>..\packages\Npgsql.3.2.5\lib\net451\Npgsql.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="PdfSharp-wpf, Version=1.50.4619.0, Culture=neutral, PublicKeyToken=f94615aa0424f9eb, processorArchitecture=MSIL">
+      <HintPath>..\packages\PDFsharp-MigraDoc-wpf.1.50.4619-beta4c\lib\net30\PdfSharp-wpf.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="PdfSharp.Charting-wpf, Version=1.50.4619.0, Culture=neutral, PublicKeyToken=f94615aa0424f9eb, processorArchitecture=MSIL">
+      <HintPath>..\packages\PDFsharp-MigraDoc-wpf.1.50.4619-beta4c\lib\net30\PdfSharp.Charting-wpf.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="PresentationCore" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -48,6 +69,7 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Form1.cs">

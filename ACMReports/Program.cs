@@ -9,14 +9,14 @@ namespace ACMReports
     static class Program
     {
         /// <summary>
-        /// Main initial application point
+        /// Главная точка входа для приложения.
         /// </summary>
         [STAThread]
         static void Main()
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new WorktimeForm());
         }
     }
 }
