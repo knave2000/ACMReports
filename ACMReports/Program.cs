@@ -9,7 +9,7 @@ namespace ACMReports
     static class Program
     {
         /// <summary>
-        /// Главная точка входа для приложения.
+        /// Main initial application point
         /// </summary>
         [STAThread]
         static void Main()
