@@ -4,15 +4,11 @@ using System.Diagnostics;
 using System.IO;
 using System.Windows.Forms;
 using Npgsql;
-using PdfSharp;
 using PdfSharp.Drawing;
 using PdfSharp.Pdf;
 using MigraDoc.DocumentObjectModel.Tables;
 using MigraDoc.DocumentObjectModel;
 using MigraDoc.Rendering;
-
-// Creation date: 01.09.2017
-// Author: Vladimir Artyukhov, knave2000@gmail.com
 
 namespace ACMReports
 {
@@ -34,10 +30,10 @@ namespace ACMReports
         {
             // Create a new PDF document
             PdfDocument document = new PdfDocument();
-            document.Info.Title = "Created by ACM Report Generator.";
-            document.Info.Subject = "Worktime report created by ACM Report Generator.";
-            document.Info.Author = "ACM Report";
-            document.Info.Keywords = "ACM Report, Worktime";
+            document.Info.Title = "Created by ACMReports Generator.";
+            document.Info.Subject = "Attendance report created by ACMReports.";
+            document.Info.Author = "ACMReports";
+            document.Info.Keywords = "ACM Reports";
 
             // Define the total number of pages in document
             int pageLast = rowNum / rowsPerPage + 1;  // the last page number
@@ -148,9 +144,9 @@ namespace ACMReports
             }
 
             // Put the rows into the table
-            DataRow dr = dt.Rows[0];
             for (int i = 1 + (pageNum - 1) * rowsPerPage; i <= lastNum; i++)
             {
+                DataRow dr = dt.Rows[i - 1];
                 row = table.AddRow();
                 row.Cells[0].AddParagraph(i.ToString());
                 row.Cells[1].AddParagraph(dr["name"].ToString());

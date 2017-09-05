@@ -1,14 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using Npgsql;
-using NpgsqlTypes;
+using System.Threading.Tasks;
 
 namespace ACMReports
 {
@@ -59,10 +52,10 @@ namespace ACMReports
                 conn.Close();
                 MessageBox.Show("Connection to ACM successfully installed.");
             }
-            catch
+            catch (Exception msg)
             {
                 // if something went wrong, and you want to know why
-                MessageBox.Show("Connection to ACM failed.");
+                MessageBox.Show("Connection to ACM failed. " + msg.ToString());
             }
         }
 
