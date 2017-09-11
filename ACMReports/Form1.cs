@@ -215,7 +215,7 @@ namespace ACMReports
                 "        to_timestamp(min(trxdateutc)) AS start_date, " +
                 "        fullname AS fn1 " +
                 "    FROM rpt_alltrx " +
-                "    WHERE eventname like '%{0}' " +
+                "    WHERE eventname like '%{0}%' " +
                 "        AND sourcename like '%{1}%' " +
                 "        AND to_timestamp(trxdateutc) >= to_timestamp('{4}', 'YYYY-MM-DD') " +
                 "        AND to_timestamp(trxdateutc) <= to_timestamp('{5}', 'YYYY-MM-DD') " +
